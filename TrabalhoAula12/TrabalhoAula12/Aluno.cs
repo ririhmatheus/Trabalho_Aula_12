@@ -36,7 +36,19 @@ namespace TrabalhoAula12
 
         public string erroValidacao(int i)
         {
-            
+            string m;
+
+            if (validaNome() == 1)
+            {
+                m = "ERROR POR Ç";
+                return m;
+            }
+            else if (validaNome() == 2)
+            {
+                m = "ERROR POR '@'";
+                return m;
+            }
+            return "";
         }
     }
 }
